@@ -7,19 +7,20 @@ term = blessed.Terminal()
 from remote_play import create_connection, get_remote_orders, notify_remote_orders, close_connection
 
 # other functions
-def create_board(file_bsh):
-    """This function uses the informations contained in the bsh file to create the board of the game.
+def create_board(board_dictionary):
+    """This function uses the informations contained in board_dictionary to create the game board with UTF8 symbols and 
+    using blessed functions.
     
     Parameters:
     ----------
-    file_bsh: It's the bsh file on webcampus.(file)
+    board_dictionary: It's the dictionary with all the game board's informations.(dict)
 
     Returns
     board: it's the board of the game built with UTF8 symbols.(string)
 
     Version
     -------
-    specification: Abdusamed Mus (v1 26/02/2024)
+    specification: Abdusamed Mus (v2 07/03/2024)
 
     """
 
@@ -36,12 +37,12 @@ def create_players_dictionary(board_dictionary):
 
     """
 
-def create_board_dictionary(board):
-    """ Creates the dictionary with all the infromations regarding the playing board.
+def create_board_dictionary(file_bsh):
+    """ Creates the board dictionary with all the infromations regarding the playing board found in the bsh file (on webcampus).
     
     Parameters
     -----------
-    board : all the information needed to create the dictionary, provided by the function "def create_board(string)" (str).
+    file_bsh : a file with all the information needed to create the dictionary (file).
 
     Returns
     -------
@@ -49,7 +50,7 @@ def create_board_dictionary(board):
     
     Version
     -------
-    specification: Abdusamed Mus (v1 26/02/2024)
+    specification: Abdusamed Mus (v1 07/03/2024)
     
     """
 
