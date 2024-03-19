@@ -158,7 +158,7 @@ def sheep_apparition(board_dictionary, player, order, nbr_of_grass_tiles):
     implementation : Malak El Maimouni (v1 18/03/2024)
     
     """
-    # r représente la ligne et c représente la colonne
+  
     if nbr_of_grass_tiles >= 30:
         for spawn in board_dictionary['spawn']:
             r= spawn
